@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: simple-python
+    build: .
+    volumes:
+      - type: bind
+        source: ./src
+        target: /app
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/bash
