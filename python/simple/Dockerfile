@@ -12,11 +12,11 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # copy and install python dependencies
-COPY /src/requirements.txt .
+COPY /app/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # copy project files
-COPY ./src/* .
+COPY ./app/* .
 
 # add workding dir to python path
 ENV PYTHONPATH="${PYTHONPATH}:/app"
