@@ -3,3 +3,7 @@
 .env
 
 node/puppeteer/
+
+node/puppet/package.json
+node/puppet/src/page.jpg
+node/puppet/src/script.js
