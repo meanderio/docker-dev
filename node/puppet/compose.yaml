@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: dckr-puppet
+    build: .
+    volumes:
+      - type: bind
+        source: ./src
+        target: /home/pptruser/src
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/bash
